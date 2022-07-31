@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="main">
+    <!-- <div class="main">
       <div class="main__wrapper">
         <div class="main__header">
           <img
@@ -17,16 +17,20 @@
           <b>«Vue.js для опытных разработчиков».</b>
         </p>
       </div>
-    </div>
+    </div> -->
+    <IndexVue />
   </div>
 </template>
-
 <script>
+import IndexVue from "@/views/Index";
 export default {
   name: "App",
+  components: {
+    IndexVue,
+  },
 };
 </script>
-
+// Импортируем глобальные стили для приложения
 <style lang="scss">
 @import "~@/assets/scss/app";
 </style>
